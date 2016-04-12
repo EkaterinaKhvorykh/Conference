@@ -20,6 +20,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+   // @IBOutlet weak var ConfName: UITextField!
+    //@IBOutlet weak var ConfDescription: UITextField!
+   
+    @IBAction func BTime(sender: UIButton) {
+        
+    }
 
 }
+class NSMutableArray: UITableViewController {
+   var timeList: [NSDate] = []
+
+}
+
+
 
