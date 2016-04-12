@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AEB38B41CBD676D006113BC /* ClsTimeTableItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEB38B31CBD676D006113BC /* ClsTimeTableItemCell.swift */; };
 		C484EA7C1C0C52F400EB559B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C484EA7B1C0C52F400EB559B /* AppDelegate.swift */; };
 		C484EA7E1C0C52F400EB559B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C484EA7D1C0C52F400EB559B /* ViewController.swift */; };
 		C484EA811C0C52F400EB559B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C484EA7F1C0C52F400EB559B /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A7BE7AD1CBD13220090E99D /* App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App-Bridging-Header.h"; sourceTree = "<group>"; };
+		1AEB38B31CBD676D006113BC /* ClsTimeTableItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClsTimeTableItemCell.swift; sourceTree = "<group>"; };
 		C484EA781C0C52F400EB559B /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C484EA7B1C0C52F400EB559B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C484EA7D1C0C52F400EB559B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AEB38B21CBD66FA006113BC /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1AEB38B31CBD676D006113BC /* ClsTimeTableItemCell.swift */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
 		C484EA6F1C0C52F400EB559B = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +108,14 @@
 		C484EA7A1C0C52F400EB559B /* App */ = {
 			isa = PBXGroup;
 			children = (
+				1AEB38B21CBD66FA006113BC /* TableViewCell */,
 				C484EA7B1C0C52F400EB559B /* AppDelegate.swift */,
 				C484EA7D1C0C52F400EB559B /* ViewController.swift */,
 				C484EA7F1C0C52F400EB559B /* Main.storyboard */,
 				C484EA821C0C52F400EB559B /* Assets.xcassets */,
 				C484EA841C0C52F400EB559B /* LaunchScreen.storyboard */,
 				C484EA871C0C52F400EB559B /* Info.plist */,
+				1A7BE7AD1CBD13220090E99D /* App-Bridging-Header.h */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -187,7 +200,7 @@
 		C484EA701C0C52F400EB559B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Екатерина";
 				TargetAttributes = {
@@ -256,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AEB38B41CBD676D006113BC /* ClsTimeTableItemCell.swift in Sources */,
 				C484EA7E1C0C52F400EB559B /* ViewController.swift in Sources */,
 				C484EA7C1C0C52F400EB559B /* AppDelegate.swift in Sources */,
 			);
@@ -397,10 +411,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eakhvorykh.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "App/App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -408,10 +425,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eakhvorykh.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "App/App-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -482,6 +501,7 @@
 				C484EAA21C0C52F400EB559B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C484EAA31C0C52F400EB559B /* Build configuration list for PBXNativeTarget "AppTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +510,7 @@
 				C484EAA51C0C52F400EB559B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C484EAA61C0C52F400EB559B /* Build configuration list for PBXNativeTarget "AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +519,7 @@
 				C484EAA81C0C52F400EB559B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

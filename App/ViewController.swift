@@ -20,6 +20,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+   
+    @IBAction func BTime(sender: UIButton) {
+        
+    }
 
+}
+class NSMutableArray: UITableViewController {
+   var timeList: [String] = ["2016-04-08", "2016-04-09", "2016-04-10", "2016-04-11"]
+    
 }
 
