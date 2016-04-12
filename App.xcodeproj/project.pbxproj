@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1AEB38B41CBD676D006113BC /* ClsTimeTableItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEB38B31CBD676D006113BC /* ClsTimeTableItemCell.swift */; };
+		1AEB38B71CBD6C4B006113BC /* ClsTimeTableTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEB38B61CBD6C4B006113BC /* ClsTimeTableTableTableViewController.swift */; };
 		C484EA7C1C0C52F400EB559B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C484EA7B1C0C52F400EB559B /* AppDelegate.swift */; };
 		C484EA7E1C0C52F400EB559B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C484EA7D1C0C52F400EB559B /* ViewController.swift */; };
 		C484EA811C0C52F400EB559B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C484EA7F1C0C52F400EB559B /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		1A7BE7AD1CBD13220090E99D /* App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App-Bridging-Header.h"; sourceTree = "<group>"; };
 		1AEB38B31CBD676D006113BC /* ClsTimeTableItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClsTimeTableItemCell.swift; sourceTree = "<group>"; };
+		1AEB38B61CBD6C4B006113BC /* ClsTimeTableTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClsTimeTableTableTableViewController.swift; sourceTree = "<group>"; };
 		C484EA781C0C52F400EB559B /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C484EA7B1C0C52F400EB559B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C484EA7D1C0C52F400EB559B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,14 @@
 			name = TableViewCell;
 			sourceTree = "<group>";
 		};
+		1AEB38B51CBD6BFF006113BC /* TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1AEB38B61CBD6C4B006113BC /* ClsTimeTableTableTableViewController.swift */,
+			);
+			name = TableViewController;
+			sourceTree = "<group>";
+		};
 		C484EA6F1C0C52F400EB559B = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +118,7 @@
 		C484EA7A1C0C52F400EB559B /* App */ = {
 			isa = PBXGroup;
 			children = (
+				1AEB38B51CBD6BFF006113BC /* TableViewController */,
 				1AEB38B21CBD66FA006113BC /* TableViewCell */,
 				C484EA7B1C0C52F400EB559B /* AppDelegate.swift */,
 				C484EA7D1C0C52F400EB559B /* ViewController.swift */,
@@ -270,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AEB38B41CBD676D006113BC /* ClsTimeTableItemCell.swift in Sources */,
+				1AEB38B71CBD6C4B006113BC /* ClsTimeTableTableTableViewController.swift in Sources */,
 				C484EA7E1C0C52F400EB559B /* ViewController.swift in Sources */,
 				C484EA7C1C0C52F400EB559B /* AppDelegate.swift in Sources */,
 			);
