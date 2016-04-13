@@ -37,16 +37,23 @@ class ClsTimeTableTableTableViewController: UITableViewController {
         return 10
     }
 
-    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
+        // let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        
         // Configure the cell...
-
+        var cell = tableView.dequeueReusableCellWithIdentifier("CELL") as? UITableViewCell!
+        
+        if cell == nil
+        {
+            cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "CELL")
+        }
+        
+        //we know that cell is not empty now so we use ! to force unwrapping
+        cell!.labelAuthor.text = "Katerina"
         return cell
     }
-    */
 
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
