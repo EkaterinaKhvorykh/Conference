@@ -16,8 +16,7 @@ class ClsTimeTableItemCell: UITableViewCell {
     @IBOutlet weak var labelTimeEnd :UILabel!
     @IBOutlet weak var labelPlace :UILabel!
     
-    
-    
+   
 
     override func awakeFromNib() {
         super.awakeFromNib()
