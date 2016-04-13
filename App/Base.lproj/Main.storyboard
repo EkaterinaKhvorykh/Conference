@@ -47,7 +47,7 @@
         <!--Расписание-->
         <scene sceneID="ykA-yX-jGV">
             <objects>
-                <tableViewController id="Uw1-o9-yWc" sceneMemberID="viewController">
+                <tableViewController id="Uw1-o9-yWc" customClass="ClsTimeTableTableTableViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TimeTableID" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="126" sectionHeaderHeight="28" sectionFooterHeight="28" id="wLs-EB-KV6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
