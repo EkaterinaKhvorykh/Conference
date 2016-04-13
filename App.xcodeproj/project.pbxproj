@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C440FE9E1CBD1073001A668D /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C440FE9D1CBD1073001A668D /* MyCell.m */; };
 		C484EA7C1C0C52F400EB559B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C484EA7B1C0C52F400EB559B /* AppDelegate.swift */; };
 		C484EA7E1C0C52F400EB559B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C484EA7D1C0C52F400EB559B /* ViewController.swift */; };
 		C484EA811C0C52F400EB559B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C484EA7F1C0C52F400EB559B /* Main.storyboard */; };
@@ -36,8 +35,6 @@
 
 /* Begin PBXFileReference section */
 		C440FE981CBD1028001A668D /* App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App-Bridging-Header.h"; sourceTree = "<group>"; };
-		C440FE9C1CBD1073001A668D /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
-		C440FE9D1CBD1073001A668D /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
 		C484EA781C0C52F400EB559B /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C484EA7B1C0C52F400EB559B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C484EA7D1C0C52F400EB559B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,8 +105,6 @@
 				C484EA841C0C52F400EB559B /* LaunchScreen.storyboard */,
 				C484EA871C0C52F400EB559B /* Info.plist */,
 				C440FE981CBD1028001A668D /* App-Bridging-Header.h */,
-				C440FE9C1CBD1073001A668D /* MyCell.h */,
-				C440FE9D1CBD1073001A668D /* MyCell.m */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -265,7 +260,6 @@
 			files = (
 				C484EA7E1C0C52F400EB559B /* ViewController.swift in Sources */,
 				C484EA7C1C0C52F400EB559B /* AppDelegate.swift in Sources */,
-				C440FE9E1CBD1073001A668D /* MyCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
