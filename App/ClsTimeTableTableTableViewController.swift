@@ -34,23 +34,25 @@ class ClsTimeTableTableTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return 2
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         // let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
         
         // Configure the cell...
-        var cell = tableView.dequeueReusableCellWithIdentifier("CELL") as? UITableViewCell!
+        var cell = tableView.dequeueReusableCellWithIdentifier("TimeTableItem") as? ClsTimeTableItemCell
         
         if cell == nil
         {
-            cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "CELL")
+            cell = ClsTimeTableItemCell()
+            
+            //UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "TimeTableItem")
         }
         
         //we know that cell is not empty now so we use ! to force unwrapping
-        cell!.labelAuthor.text = "Katerina"
-        return cell
+        cell?.labelAuthor.text = "Katerina"
+        return cell!
     }
 
     
