@@ -6,13 +6,23 @@
 //  Copyright © 2016 Екатерина. All rights reserved.
 //
 
+
 import UIKit
 
 class ClsTimeTableTableTableViewController: UITableViewController {
 
+    var testData: [ClsTimeTableItem]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        var item1 = ClsTimeTableItem()
+        item1.labelAuthor = "AAAAA"
+        item1.labelTimeEnd = NSDate(dateString: "2016-04-13")
+        item1.labelPlace = "place"
+        
+        testData?.append( item1 )
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -40,12 +50,18 @@ class ClsTimeTableTableTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
          let cell = tableView.dequeueReusableCellWithIdentifier("TimeTableItem", forIndexPath: indexPath)
         
+       // let id_row = indexPath.row
+       // testData
+        
+        
         // Configure the cell...
         //var cell = tableView.dequeueReusableCellWithIdentifier("TimeTableItem") as? ClsTimeTableItemCell
         
        // cell.labelAuthor.text = "Katerina"
         return cell
     }
+    
+
 
     
     /*

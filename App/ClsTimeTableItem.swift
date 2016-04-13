@@ -8,13 +8,12 @@
 
 import UIKit
 
-    class ClsTimeTableItem: NSObject {
-        init()
+    class ClsTimeTableItem {
     
-    var photoView :String
-    var labelAuthor : String
-    var labelTimeStart :NSDate!
-    var labelTimeEnd :NSDate!
-    var labelPlace :String!
+    var photoView :String?
+    var labelAuthor : String?
+    var labelTimeStart :NSDate?
+    var labelTimeEnd :NSDate?
+    var labelPlace :String?
         
 }

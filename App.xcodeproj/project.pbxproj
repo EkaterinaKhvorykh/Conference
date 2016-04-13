@@ -17,6 +17,7 @@
 		C484EA861C0C52F400EB559B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C484EA841C0C52F400EB559B /* LaunchScreen.storyboard */; };
 		C484EA911C0C52F400EB559B /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C484EA901C0C52F400EB559B /* AppTests.swift */; };
 		C484EA9C1C0C52F400EB559B /* AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C484EA9B1C0C52F400EB559B /* AppUITests.swift */; };
+		C497C4D91CBEBF1D008D383C /* NSDate+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = C497C4D81CBEBF1D008D383C /* NSDate+Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		C484EA971C0C52F400EB559B /* AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C484EA9B1C0C52F400EB559B /* AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUITests.swift; sourceTree = "<group>"; };
 		C484EA9D1C0C52F400EB559B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C497C4D81CBEBF1D008D383C /* NSDate+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Date.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				1AEB38B91CBEBCED006113BC /* ClsTimeTableItem.swift */,
+				C497C4D81CBEBF1D008D383C /* NSDate+Date.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C497C4D91CBEBF1D008D383C /* NSDate+Date.swift in Sources */,
 				1AEB38B41CBD676D006113BC /* ClsTimeTableItemCell.swift in Sources */,
 				1AEB38B71CBD6C4B006113BC /* ClsTimeTableTableTableViewController.swift in Sources */,
 				C484EA7E1C0C52F400EB559B /* ViewController.swift in Sources */,
