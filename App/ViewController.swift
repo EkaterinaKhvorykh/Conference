@@ -26,8 +26,5 @@ class ViewController: UIViewController {
     }
 
 }
-class NSMutableArray: UITableViewController {
-   var timeList: [String] = ["2016-04-08", "2016-04-09", "2016-04-10", "2016-04-11"]
-    
-}
+
 
