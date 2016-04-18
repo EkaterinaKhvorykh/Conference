@@ -21,9 +21,7 @@ class ViewController: UIViewController {
     }
 
    
-    @IBAction func BTime(sender: UIButton) {
-        
-    }
+    @IBAction func BTime(sender: UIButton) {}
 
 }
 
