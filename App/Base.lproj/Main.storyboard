@@ -47,13 +47,13 @@
         <!--Расписание-->
         <scene sceneID="ykA-yX-jGV">
             <objects>
-                <tableViewController id="Uw1-o9-yWc" sceneMemberID="viewController">
+                <tableViewController id="Uw1-o9-yWc" customClass="ClsTimeTableTableTableViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TimeTableID" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="126" sectionHeaderHeight="28" sectionFooterHeight="28" id="wLs-EB-KV6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TimeTableItem" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="126" id="jOv-Xm-x4K" customClass="ClsTimeTableItemCell" customModule="App" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TimeTableItem" rowHeight="126" id="jOv-Xm-x4K" customClass="ClsTimeTableItemCell" customModule="App" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="320" height="126"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" tableViewCell="jOv-Xm-x4K" id="luV-ci-iP5">
@@ -101,6 +101,14 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier="TimeTableItem"/>
+                                <connections>
+                                    <outlet property="labelAuthor" destination="QRv-1x-yv9" id="jjy-zJ-ig8"/>
+                                    <outlet property="labelPlace" destination="DBk-yl-hG0" id="FwN-p7-9T9"/>
+                                    <outlet property="labelTimeEnd" destination="iSU-hH-3I5" id="Gs1-zf-JUQ"/>
+                                    <outlet property="labelTimeStart" destination="Yaa-x0-Vx1" id="Fa1-Fx-ZSN"/>
+                                    <outlet property="photoView" destination="Og4-6Z-VaX" id="nwd-he-485"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -136,7 +144,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TimeTableNotBeginningID" selectionStyle="default" indentationWidth="10" id="Ly0-KP-KQp">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ly0-KP-KQp" id="Tih-5l-6pl">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -212,7 +220,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vq6-zO-Wxu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-26" y="-101"/>
+            <point key="canvasLocation" x="-136" y="196"/>
         </scene>
         <!--Актуальные-->
         <scene sceneID="G4Y-L6-89U">
@@ -254,6 +262,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Pgp-0y-01J"/>
+        <segue reference="KHt-dO-gsI"/>
     </inferredMetricsTieBreakers>
 </document>
