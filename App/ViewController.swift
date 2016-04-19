@@ -24,6 +24,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet weak var ConfName: UILabel!
+    @IBOutlet weak var ConfDescription: UILabel!
    
     @IBAction func BTime(sender: UIButton) {}
 

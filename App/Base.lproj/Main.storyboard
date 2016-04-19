@@ -13,6 +13,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vtn-Bs-iiu">
+                                <rect key="frame" x="40" y="368" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Расписaние"/>
+                                <connections>
+                                    <action selector="BTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dkz-95-Sph"/>
+                                    <segue destination="XhE-dU-nHx" kind="modal" id="C7N-F2-tsu"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Конференция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="A1p-cu-AOF">
                                 <rect key="frame" x="40" y="86" width="110" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -41,18 +50,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vtn-Bs-iiu">
-                                <rect key="frame" x="40" y="368" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Расписaние"/>
-                                <connections>
-                                    <action selector="BTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dkz-95-Sph"/>
-                                    <segue destination="XhE-dU-nHx" kind="modal" id="C7N-F2-tsu"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="ConfDescription" destination="zC2-Ea-gaa" id="lD3-s8-f9T"/>
+                        <outlet property="ConfName" destination="xys-Tb-eMQ" id="aBp-n0-PtD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,7 +72,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TimeTableItem" rowHeight="126" id="jOv-Xm-x4K" customClass="ClsTimeTableItemCell" customModule="App" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="320" height="126"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="126"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" tableViewCell="jOv-Xm-x4K" id="luV-ci-iP5">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="125"/>
@@ -159,7 +163,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TimeTableNotBeginningID" selectionStyle="default" indentationWidth="10" id="Ly0-KP-KQp">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ly0-KP-KQp" id="Tih-5l-6pl">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -280,7 +284,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Pgp-0y-01J"/>
-        <segue reference="FgP-4V-hsP"/>
+        <segue reference="KHt-dO-gsI"/>
+        <segue reference="t9U-QQ-6ep"/>
     </inferredMetricsTieBreakers>
 </document>
