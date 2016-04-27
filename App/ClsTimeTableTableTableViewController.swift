@@ -60,7 +60,7 @@ class ClsTimeTableTableTableViewController: UITableViewController {
        // cell.labelAuthor.text = "Katerina"
         return cell
     }
-    
+
 
 
     
