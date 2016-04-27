@@ -15,8 +15,17 @@ class ClsTimeTableItemCell: UITableViewCell {
     @IBOutlet weak var labelTimeStart :UILabel!
     @IBOutlet weak var labelTimeEnd :UILabel!
     @IBOutlet weak var labelPlace :UILabel!
+    @IBOutlet weak var labelAudience :UILabel!
+
     
-   
+    @IBOutlet weak var photoViewAct :UIImageView!
+    @IBOutlet weak var labelAuthorAct :UILabel!
+    @IBOutlet weak var labelTimeStartAct :UILabel!
+    @IBOutlet weak var labelTimeEndAct :UILabel!
+    @IBOutlet weak var labelPlaceAct :UILabel!
+    @IBOutlet weak var labelAudienceAct :UILabel!
+
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
