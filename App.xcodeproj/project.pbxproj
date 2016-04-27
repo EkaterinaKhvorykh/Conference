@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A33A9DB1CD0F24A007DC104 /* button3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A33A9DA1CD0F24A007DC104 /* button3.png */; };
 		1AEB38B41CBD676D006113BC /* ClsTimeTableItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEB38B31CBD676D006113BC /* ClsTimeTableItemCell.swift */; };
 		1AEB38B71CBD6C4B006113BC /* ClsTimeTableTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEB38B61CBD6C4B006113BC /* ClsTimeTableTableTableViewController.swift */; };
 		1AEB38BA1CBEBCED006113BC /* ClsTimeTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEB38B91CBEBCED006113BC /* ClsTimeTableItem.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A33A9DA1CD0F24A007DC104 /* button3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button3.png; sourceTree = SOURCE_ROOT; };
 		1A7BE7AD1CBD13220090E99D /* App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App-Bridging-Header.h"; sourceTree = "<group>"; };
 		1AEB38B31CBD676D006113BC /* ClsTimeTableItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClsTimeTableItemCell.swift; sourceTree = "<group>"; };
 		1AEB38B61CBD6C4B006113BC /* ClsTimeTableTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClsTimeTableTableTableViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		C484EA7A1C0C52F400EB559B /* App */ = {
 			isa = PBXGroup;
 			children = (
+				1A33A9DA1CD0F24A007DC104 /* button3.png */,
 				1AEB38B81CBEBCA1006113BC /* Data */,
 				1AEB38B51CBD6BFF006113BC /* TableViewController */,
 				1AEB38B21CBD66FA006113BC /* TableViewCell */,
@@ -278,6 +281,7 @@
 			files = (
 				C484EA861C0C52F400EB559B /* LaunchScreen.storyboard in Resources */,
 				1AEBD2A51CC61DEF00030170 /* back2.jpg in Resources */,
+				1A33A9DB1CD0F24A007DC104 /* button3.png in Resources */,
 				1AEBD2B71CCA738200030170 /* button2.png in Resources */,
 				C484EA831C0C52F400EB559B /* Assets.xcassets in Resources */,
 				1AEBD2B31CCA721600030170 /* button1.png in Resources */,
