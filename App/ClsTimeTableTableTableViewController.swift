@@ -31,7 +31,7 @@ class ClsTimeTableTableTableViewController: UITableViewController {
         item1.labelPlace = "place"
         item1.labelTimeStart = NSDate(dateString: "2016-04-13")
 
-        item2.labelAuthor = "hruhjhf"
+        
 
         
         
