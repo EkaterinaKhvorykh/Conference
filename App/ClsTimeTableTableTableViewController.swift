@@ -35,6 +35,7 @@ class ClsTimeTableTableTableViewController: UITableViewController {
         
         let item2 = ClsTimeTableItem()
         item2.labelAuthor = "BBB"
+
         item2.labelPlace = "fjhf"
         
         testData?.append( item1 )
