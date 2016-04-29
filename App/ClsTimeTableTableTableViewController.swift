@@ -19,12 +19,17 @@ class ClsTimeTableTableTableViewController: UITableViewController {
 
         testData = [ClsTimeTableItem]()
         
-        var item1 = ClsTimeTableItem()
+        let item1 = ClsTimeTableItem()
         item1.labelAuthor = "AAAAA"
         item1.labelTimeEnd = NSDate(dateString: "2016-04-13")
         item1.labelPlace = "place"
         
+        let item2 = ClsTimeTableItem()
+        item2.labelAuthor = "BBB"
+        item2.labelPlace = "fjhf"
+        
         testData?.append( item1 )
+        testData?.append(item2)
         
         self.tableView.reloadData()
         
