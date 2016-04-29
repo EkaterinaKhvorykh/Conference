@@ -17,8 +17,8 @@ class ClsTimeTableItemCell: UITableViewCell {
     @IBOutlet weak var labelPlace :UILabel!
     @IBOutlet weak var labelAudience :UILabel!
     
-    
-    @IBOutlet weak var photoViewAct :UIImageView!
+
+   @IBOutlet weak var photoViewAct :UIImageView!
     @IBOutlet weak var labelAuthorAct :UILabel!
     @IBOutlet weak var labelTimeStartAct :UILabel!
     @IBOutlet weak var labelTimeEndAct :UILabel!
