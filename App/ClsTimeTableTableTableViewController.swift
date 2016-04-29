@@ -13,15 +13,20 @@ class ClsTimeTableTableTableViewController: UITableViewController {
 
     var testData: [ClsTimeTableItem]?
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        testData = [ClsTimeTableItem]()
+        
         var item1 = ClsTimeTableItem()
         item1.labelAuthor = "AAAAA"
         item1.labelTimeEnd = NSDate(dateString: "2016-04-13")
         item1.labelPlace = "place"
         
         testData?.append( item1 )
+        
+        self.tableView.reloadData()
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -36,6 +41,8 @@ class ClsTimeTableTableTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+    
+
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -44,7 +51,13 @@ class ClsTimeTableTableTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 20
+        if testData == nil {
+            return 0
+        }
+        else
+        {
+            return (testData?.count)!
+        }
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
