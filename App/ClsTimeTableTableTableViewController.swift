@@ -34,6 +34,7 @@ class ClsTimeTableTableTableViewController: UITableViewController {
 
         
         testData?.append( item1 )
+        testData?.append(item2)
         
         self.tableView.reloadData()
         
