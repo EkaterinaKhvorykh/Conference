@@ -22,6 +22,7 @@ class ClsTimeTableTableTableViewController: UITableViewController {
         
         let item1 = ClsTimeTableItem()
         
+        let item2 = ClsTimeTableItem()
         
     
         
@@ -31,12 +32,14 @@ class ClsTimeTableTableTableViewController: UITableViewController {
         item1.labelPlace = "place"
         item1.labelTimeStart = NSDate(dateString: "2016-04-13")
 
+        item2.labelAuthor="dklwakjhfs"
         
 
         
         
         
         testData?.append( item1 )
+        testData?.append(item2)
       
         
         
