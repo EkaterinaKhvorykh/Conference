@@ -30,6 +30,7 @@ class ClsTimeTableTableTableViewController: UITableViewController {
         
 
         item2.labelAuthor="dklwakjhfs"
+        item2.labelPlace="jhkhjs"
     
         
         testData?.append( item1 )
@@ -79,6 +80,11 @@ class ClsTimeTableTableTableViewController: UITableViewController {
         let conf = testData![indexPath.row] as ClsTimeTableItem
         
         cell.textLabel?.text = conf.labelAuthor
+        cell.textLabel?.text = conf.labelPlace
+        
+       // cell.textLabel?.text = conf.labelTimeEnd
+       // cell.textLabel?.text = conf.labelTimeStart
+        cell.textLabel?.text = conf.photoView
         
         
        // let id_row = indexPath.row
