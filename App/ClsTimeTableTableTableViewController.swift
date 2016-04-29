@@ -19,10 +19,19 @@ class ClsTimeTableTableTableViewController: UITableViewController {
 
         testData = [ClsTimeTableItem]()
         
-        var item1 = ClsTimeTableItem()
+        
+        let item1 = ClsTimeTableItem()
+        let item2 = ClsTimeTableItem()
+    
+        
+    
         item1.labelAuthor = "AAAAA"
         item1.labelTimeEnd = NSDate(dateString: "2016-04-13")
         item1.labelPlace = "place"
+        item1.labelTimeStart = NSDate(dateString: "2016-04-13")
+
+        item2.labelAuthor = "hruhjhf"
+
         
         testData?.append( item1 )
         
@@ -51,9 +60,12 @@ class ClsTimeTableTableTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        if testData == nil {
+        
+        if testData == nil
+        {
             return 0
         }
+            
         else
         {
             return (testData?.count)!
