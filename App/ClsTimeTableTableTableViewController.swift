@@ -76,12 +76,12 @@ class ClsTimeTableTableTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("TimeTableItem", forIndexPath: indexPath)
-        as UITableViewCell!
+        as! ClsTimeTableItemCell
         
         let conf = testData![indexPath.row] as ClsTimeTableItem
         
-        cell.textLabel?.text = conf.labelAuthor
-        cell.textLabel?.text = conf.labelPlace
+        cell.labelAuthor.text = conf.labelAuthor
+        cell.labelPlace.text = conf.labelPlace
         
         return cell
     }
