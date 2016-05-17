@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A33A9DB1CD0F24A007DC104 /* button3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A33A9DA1CD0F24A007DC104 /* button3.png */; };
+		1AC41E0F1CEB8B5700B50545 /* ConfModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AC41E0D1CEB8B5700B50545 /* ConfModel.xcdatamodeld */; };
 		1AEB38B41CBD676D006113BC /* ClsTimeTableItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEB38B31CBD676D006113BC /* ClsTimeTableItemCell.swift */; };
 		1AEB38B71CBD6C4B006113BC /* ClsTimeTableTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEB38B61CBD6C4B006113BC /* ClsTimeTableTableTableViewController.swift */; };
 		1AEB38BA1CBEBCED006113BC /* ClsTimeTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEB38B91CBEBCED006113BC /* ClsTimeTableItem.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		1A33A9DA1CD0F24A007DC104 /* button3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button3.png; sourceTree = SOURCE_ROOT; };
 		1A7BE7AD1CBD13220090E99D /* App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App-Bridging-Header.h"; sourceTree = "<group>"; };
+		1AC41E0E1CEB8B5700B50545 /* ConfModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ConfModel.xcdatamodel; sourceTree = "<group>"; };
 		1AEB38B31CBD676D006113BC /* ClsTimeTableItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClsTimeTableItemCell.swift; sourceTree = "<group>"; };
 		1AEB38B61CBD6C4B006113BC /* ClsTimeTableTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClsTimeTableTableTableViewController.swift; sourceTree = "<group>"; };
 		1AEB38B91CBEBCED006113BC /* ClsTimeTableItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClsTimeTableItem.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		C484EA6F1C0C52F400EB559B = {
 			isa = PBXGroup;
 			children = (
+				1AC41E0D1CEB8B5700B50545 /* ConfModel.xcdatamodeld */,
 				C484EA7A1C0C52F400EB559B /* App */,
 				C484EA8F1C0C52F400EB559B /* AppTests */,
 				C484EA9A1C0C52F400EB559B /* AppUITests */,
@@ -308,6 +311,7 @@
 			files = (
 				C497C4D91CBEBF1D008D383C /* NSDate+Date.swift in Sources */,
 				1AEB38B41CBD676D006113BC /* ClsTimeTableItemCell.swift in Sources */,
+				1AC41E0F1CEB8B5700B50545 /* ConfModel.xcdatamodeld in Sources */,
 				1AEB38B71CBD6C4B006113BC /* ClsTimeTableTableTableViewController.swift in Sources */,
 				C484EA7E1C0C52F400EB559B /* ViewController.swift in Sources */,
 				C484EA7C1C0C52F400EB559B /* AppDelegate.swift in Sources */,
@@ -562,6 +566,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1AC41E0D1CEB8B5700B50545 /* ConfModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1AC41E0E1CEB8B5700B50545 /* ConfModel.xcdatamodel */,
+			);
+			currentVersion = 1AC41E0E1CEB8B5700B50545 /* ConfModel.xcdatamodel */;
+			path = ConfModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C484EA701C0C52F400EB559B /* Project object */;
 }
