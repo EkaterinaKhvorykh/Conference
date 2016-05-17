@@ -83,6 +83,14 @@ class ClsTimeTableTableTableViewController: UITableViewController {
         cell.labelAuthor.text = conf.labelAuthor
         cell.labelPlace.text = conf.labelPlace
         
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = .MediumStyle
+        dateFormatter.timeStyle = .NoStyle
+        
+        if conf.labelTimeStart != nil{
+            cell.labelTimeStart.text = dateFormatter.stringFromDate(conf.labelTimeStart!)
+        }
+        
         return cell
     }
     
