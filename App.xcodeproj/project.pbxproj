@@ -21,6 +21,7 @@
 		C484EA911C0C52F400EB559B /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C484EA901C0C52F400EB559B /* AppTests.swift */; };
 		C484EA9C1C0C52F400EB559B /* AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C484EA9B1C0C52F400EB559B /* AppUITests.swift */; };
 		C497C4D91CBEBF1D008D383C /* NSDate+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = C497C4D81CBEBF1D008D383C /* NSDate+Date.swift */; };
+		C4B968EC1CEB8CE500191212 /* AboutConfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B968EB1CEB8CE500191212 /* AboutConfViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		C484EA9B1C0C52F400EB559B /* AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUITests.swift; sourceTree = "<group>"; };
 		C484EA9D1C0C52F400EB559B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C497C4D81CBEBF1D008D383C /* NSDate+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Date.swift"; sourceTree = "<group>"; };
+		C4B968EB1CEB8CE500191212 /* AboutConfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutConfViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				1AEB38B61CBD6C4B006113BC /* ClsTimeTableTableTableViewController.swift */,
+				C4B968EB1CEB8CE500191212 /* AboutConfViewController.swift */,
 			);
 			name = TableViewController;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				C484EA7E1C0C52F400EB559B /* ViewController.swift in Sources */,
 				C484EA7C1C0C52F400EB559B /* AppDelegate.swift in Sources */,
 				1AEB38BA1CBEBCED006113BC /* ClsTimeTableItem.swift in Sources */,
+				C4B968EC1CEB8CE500191212 /* AboutConfViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

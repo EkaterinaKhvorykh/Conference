@@ -94,6 +94,24 @@ class ClsTimeTableTableTableViewController: UITableViewController {
         return cell
     }
     
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    
+        if segue.identifier == "ShowReport" {
+            if let detailsViewController = segue.destinationViewController as? AboutConfViewController {
+                
+                // надо найти выбранный элемент
+                // передать его в другой контроллер
+                
+                detailsViewController.showHtml()// = tappedColor
+            }
+        }
+        
+    
+    }
+    
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
