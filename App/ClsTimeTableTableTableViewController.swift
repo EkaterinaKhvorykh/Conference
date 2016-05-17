@@ -81,7 +81,6 @@ class ClsTimeTableTableTableViewController: UITableViewController {
         
         cell.textLabel?.text = conf.labelAuthor
         cell.textLabel?.text = conf.labelPlace
-        
         cell.textLabel?.text = conf.photoView
         
         
