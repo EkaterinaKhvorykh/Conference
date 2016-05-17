@@ -23,17 +23,17 @@ class ClsTimeTableTableTableViewController: UITableViewController {
         let item1 = ClsTimeTableItem()
         let item2 = ClsTimeTableItem()
     
-        item1.labelAuthor = "AAAAA"
-       item1.labelTimeEnd = NSDate(dateString: "2016-04-13")
-        item1.labelPlace = "place"
+        item1.labelAuthor = "Fred"
+        item1.labelTimeEnd = NSDate(dateString: "2016-04-13")
+        item1.labelPlace = "New York"
         item1.labelTimeStart = NSDate(dateString: "2016-04-13")
         
 
-        item2.labelAuthor="dklwakjhfs"
-        item2.labelPlace="jhkhjs"
+        item2.labelAuthor="Jack"
+        item2.labelPlace="Los Angeles"
     
         
-        testData?.append( item1 )
+        testData?.append(item1)
         testData?.append(item2)
         
         self.tableView.reloadData()
@@ -74,29 +74,17 @@ class ClsTimeTableTableTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-         let cell = tableView.dequeueReusableCellWithIdentifier("TimeTableItem", forIndexPath: indexPath)
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("TimeTableItem", forIndexPath: indexPath)
         as UITableViewCell!
         
         let conf = testData![indexPath.row] as ClsTimeTableItem
         
         cell.textLabel?.text = conf.labelAuthor
         cell.textLabel?.text = conf.labelPlace
-        cell.textLabel?.text = conf.photoView
         
-        
-       // let id_row = indexPath.row
-       // testData
-        
-        
-        // Configure the cell...
-        //var cell = tableView.dequeueReusableCellWithIdentifier("TimeTableItem") as? ClsTimeTableItemCell
-        
-       // cell.labelAuthor.text = "Katerina"
         return cell
     }
-
-
-
     
     /*
     // Override to support conditional editing of the table view.

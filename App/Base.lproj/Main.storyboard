@@ -275,12 +275,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="О докладе" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="xsm-5n-HcP">
-                                <rect key="frame" x="112" y="122" width="97" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="04k-TR-yeg">
+                                <rect key="frame" x="48" y="120" width="225" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <state key="normal" title="Button" image="button3.png"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -351,6 +350,7 @@
     </scenes>
     <resources>
         <image name="button2.png" width="396" height="64"/>
+        <image name="button3.png" width="792" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Pgp-0y-01J"/>
