@@ -83,8 +83,34 @@ class ClsTimeTableTableTableViewController: UITableViewController {
         cell.labelAuthor.text = conf.labelAuthor
         cell.labelPlace.text = conf.labelPlace
         
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = .MediumStyle
+        dateFormatter.timeStyle = .NoStyle
+        
+        if conf.labelTimeStart != nil{
+            cell.labelTimeStart.text = dateFormatter.stringFromDate(conf.labelTimeStart!)
+        }
+        
         return cell
     }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    
+        if segue.identifier == "ShowReport" {
+            if let detailsViewController = segue.destinationViewController as? AboutConfViewController {
+                
+                // надо найти выбранный элемент
+                // передать его в другой контроллер
+                
+                detailsViewController.showHtml()// = tappedColor
+            }
+        }
+        
+    
+    }
+    
+    
     
     /*
     // Override to support conditional editing of the table view.
